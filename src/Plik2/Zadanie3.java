@@ -17,7 +17,7 @@ public class Zadanie3 {
             System.out.println("Masz nadwagę");
         } else if (bmi < 18.5) {
             System.out.println("Masz niedowagę");
-        }else if (bmi<=25 && waga >= 18.5) {
+        }else if (bmi<=25 && bmi >= 18.5) {
             System.out.println("Masz odpowiednią wagę");
         }
     }
