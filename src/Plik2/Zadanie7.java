@@ -14,10 +14,21 @@ public class Zadanie7 {
         imie2 = klawisze.nextLine();
         System.out.println("Podaj trzecie imię");
         imie3 = klawisze.nextLine();
-        if (imie1.compareToIgnoreCase(imie2) && imie1.compareToIgnoreCase(imie3)) <0 {
-            System.out.println(imie1);
-        }else if (imie1.compareToIgnoreCase(imie2) && imie1.compareToIgnoreCase(imie3)) ==0{
-    }
-
+        if (imie1.compareToIgnoreCase(imie2)< 0 && imie1.compareToIgnoreCase(imie3)< 0 && imie2.compareToIgnoreCase(imie3)< 0){
+            System.out.println(imie1+" " + imie2+" " + imie3);
+        } else if (imie1.compareToIgnoreCase(imie2)< 0 && imie1.compareToIgnoreCase(imie3)< 0 && imie2.compareToIgnoreCase(imie3)< 0) {
+            System.out.println(imie1+" " + imie3+" " + imie2);
+        } else if (imie2.compareToIgnoreCase(imie1)< 0 && imie2.compareToIgnoreCase(imie3)< 0 && imie1.compareToIgnoreCase(imie3)< 0) {
+            System.out.println(imie2+" " + imie1+" " + imie3);
+        }
+        else if (imie2.compareToIgnoreCase(imie1)< 0 && imie2.compareToIgnoreCase(imie3)< 0 && imie3.compareToIgnoreCase(imie2)< 0) {
+            System.out.println(imie2+" " + imie3+" " + imie1);
+        }
+        else if (imie3.compareToIgnoreCase(imie1)< 0 && imie3.compareToIgnoreCase(imie2)< 0 && imie1.compareToIgnoreCase(imie2)< 0) {
+            System.out.println(imie3+" " + imie1+" " + imie2);
+        }else if (imie3.compareToIgnoreCase(imie1)< 0 && imie3.compareToIgnoreCase(imie2)< 0 && imie3.compareToIgnoreCase(imie1)< 0) {
+            System.out.println(imie3 +" "+ imie2+" " + imie1);
+        }
+        
     }
 }
